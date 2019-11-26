@@ -8,7 +8,7 @@ _by _JianFeng Li_
 _**Git**_ is a local version control system used for creating and saving own
 programs. This means that you can check your *history* to control and organize
 the files. Git is very useful when you have lots of projects and sub-topics to
-work with.
+work with.  
 _**Github**_ is very similar to git where the commands are the same and you code.
 However, there are many more benefits in using github. The main benefit is that
 github is cloud-based, meaning you can share your program with other programmers
