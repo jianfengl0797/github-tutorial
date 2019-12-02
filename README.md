@@ -42,6 +42,9 @@ github without the requirement of signing in everytime. This key is private and
 is only saved on your computer. (Included in the ide setup)
 - With the SSH key, you don't need to enter your username and password everytime
 when using git commands.
+
+![SSH Key in use](https://help.github.com/assets/images/help/repository/remotes-url.png)
+
 ---
 
 ## Repository Setup
