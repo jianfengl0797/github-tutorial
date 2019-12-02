@@ -8,7 +8,7 @@ _by _JianFeng Li_
 _**Git**_ is a local version control system used for creating and saving own
 programs. This means that you can check your *history* to control and organize
 the files. Git is very useful when you have lots of projects and sub-topics to
-work with.
+work with.  
 _**Github**_ is very similar to git where the commands are the same and you code.
 However, there are many more benefits in using github. The main benefit is that
 github is cloud-based, meaning you can share your program with other programmers
@@ -60,17 +60,18 @@ mistake, do <code> rm -rf .git </code> to undo the mistake.
 "(what ever message you want)" </code>
 
  Now lets say that you are done coding and you want to save your progress. This is where you
-do adding and commiting.
+do adding and commiting.  
 **Adding** is the part where you put your changed file in the staging area,
 ready to be committed. You *cannot* commit a change without doing adding first. It's like
 trying to take a picture of someone thats in front on the camera versus taking a picture
-of someone that's not even in front of the camera.
-**commiting** is the part where you actually save whatever is on the staging area.
+of someone that's not even in front of the camera.  
+**Commiting** is the part where you actually save whatever is on the staging area.
 When commiting, it is important to add a message to remind yourself of your progress.
-After doing <code> git add </code> and <git commit -m ""
+After doing <code> git add </code> and <code> git commit -m </code>
 
 --
 <li> <code> git push -u origin master </code>
+
 After you add and commit your changes, you would want to push the changes to github.
 You only need to use this code the first time you want to push to a certain repository,
 then using <code> git push </code> alone would be enough afterwards. This is because
@@ -100,4 +101,10 @@ repository in your github.
 
 ---
 ## Rolling Back Changes
-*What to do when you make a mistake*
+ #### How to undo changes*
+
+*Scenerio #1: Made changes in a file but didn't add or commit the change yet*  
+Use <code> git checkout "file name" </code> to undo the changes
+> Notes: Do <code> git status </code> and it will tell you what to do.
+
+*Scenerio #2: Added the changed file by accident*
