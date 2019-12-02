@@ -125,5 +125,3 @@ Then, click on the file you want to revert and copy the commit hash
 Next, go back to the ide and do <code> git revert "commit hash" </code>  
 Do **"Ctrl x"** > **"Y"** > **"Enter"**  
 Lastly, push the changes back to github
-
-asdnfjsahd fjl
