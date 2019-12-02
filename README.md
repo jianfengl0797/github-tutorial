@@ -46,41 +46,41 @@ when using git commands.
 
 ## Repository Setup
 <ol>
-<li> <code> git init </code>  
+<li> <code> git init </code>
 
- Everytime you start a new project in a new directory, you'll need to use this command 
-to connect the file to a github repository. With out initializing, you won't be able 
-to save your project in the cloud. After you are done initializing, you can start 
-coding in that directory. 
-> Note: Never do <code> git init </code> in the main parent directory. If you made this 
-mistake, do <code> rm -rf .git </code> to undo the mistake.  
-
---
-<li> <code> git add (file name) </code> or <code> git add . </code>  --> <code> git commit -m 
-"(what ever message you want)" </code>  
-
- Now lets say that you are done coding and you want to save your progress. This is where you 
-do adding and commiting.   
-**Adding** is the part where you put your changed file in the staging area, 
-ready to be committed. You *cannot* commit a change without doing adding first. It's like 
-trying to take a picture of someone thats in front on the camera versus taking a picture 
-of someone that's not even in front of the camera.   
-**commiting** is the part where you actually save whatever is on the staging area. 
-When commiting, it is important to add a message to remind yourself of your progress. 
-After doing <code> git add </code> and <git commit -m ""  
+ Everytime you start a new project in a new directory, you'll need to use this command
+to connect the file to a github repository. With out initializing, you won't be able
+to save your project in the cloud. After you are done initializing, you can start
+coding in that directory.
+> Note: Never do <code> git init </code> in the main parent directory. If you made this
+mistake, do <code> rm -rf .git </code> to undo the mistake.
 
 --
-<li> <code> git push -u origin master </code>  
+<li> <code> git add (file name) </code> or <code> git add . </code>  --> <code> git commit -m
+"(what ever message you want)" </code>
+
+ Now lets say that you are done coding and you want to save your progress. This is where you
+do adding and commiting.
+**Adding** is the part where you put your changed file in the staging area,
+ready to be committed. You *cannot* commit a change without doing adding first. It's like
+trying to take a picture of someone thats in front on the camera versus taking a picture
+of someone that's not even in front of the camera.
+**commiting** is the part where you actually save whatever is on the staging area.
+When commiting, it is important to add a message to remind yourself of your progress.
+After doing <code> git add </code> and <git commit -m ""
+
+--
+<li> <code> git push -u origin master </code>
 After you add and commit your changes, you would want to push the changes to github.
-You only need to use this code the first time you want to push to a certain repository, 
-then using <code> git push </code> alone would be enough afterwards. This is because 
-the -u origin master will remember which branch to push the changes to. 
+You only need to use this code the first time you want to push to a certain repository,
+then using <code> git push </code> alone would be enough afterwards. This is because
+the -u origin master will remember which branch to push the changes to.
 
 --
-<li> If there is nowhere to push your changes to, it means you have to create a new 
-repository in your github.  
+<li> If there is nowhere to push your changes to, it means you have to create a new
+repository in your github.
  <ol>
-  <li> Go to your github 
+  <li> Go to your github
   <li> Press the "+" icon at the top right corner of the page
   <li> Click New Repository
   <li> Create repository name. (Make sure it's exactly the same as the file name)
@@ -91,6 +91,13 @@ repository in your github.
 
 
 ## Workflow & Commands
+* git status = Check your status with adding/ committing/ and pushing
+* git add = move changes to the staging area
+  * git add . = all your changes
+  * git add "specific file name" = add certain files to the staging area
+* git commit -m "message" = Save the changes that's on the staging area
+* git push = push the changes from the ide to a certain repository on github
 
 ---
 ## Rolling Back Changes
+*What to do when you make a mistake*
