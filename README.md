@@ -51,16 +51,18 @@ when using git commands.
 <ol>
 <li> <code> git init </code>
 
- Everytime you start a new project in a new directory, you'll need to use this command
+Everytime you start a new project in a new directory by doing <code> mkdir (directory name)</code>, 
+you'll need to use <code>git init</code>
 to connect the file to a github repository. With out initializing, you won't be able
 to save your project in the cloud. After you are done initializing, you can start
-coding in that directory.
+coding in that directory. To start coding something in a file, type <code> touch 
+(file name)</code>  to create that file and code. Make sure to save the file when done coding. 
 > Note: Never do <code> git init </code> in the main parent directory. If you made this
 mistake, do <code> rm -rf .git </code> to undo the mistake.
 
 --
 <li> <code> git add (file name) </code> or <code> git add . </code>  --> <code> git commit -m
-"(what ever message you want)" </code>
+(what ever message you want) </code>
 
  Now lets say that you are done coding and you want to save your progress. This is where you
 do adding and committing.  
@@ -98,16 +100,34 @@ repository in your github.
 * git status = Check your status with adding/ committing/ and pushing
 * git add = move changes to the staging area
   * git add . = all your changes
-  * git add "specific file name" = add certain files to the staging area
-* git commit -m "message" = Save the changes that's on the staging area
+  * git add (specific file name) = add certain files to the staging area
+* git commit -m (message) = Save the changes that's on the staging area
 * git push = push the changes from the ide to a certain repository on github
+* git log = check your previous commands
+  * q = press q to get out of log
+
+**Tools in the command line**
+* cd .. = move up 1 directory in your ide
+* pwd = tells you where you are
+* ls = list content of current directory
+  * ls -a = shows all contents
+* mkdir (directory name) = create directory
+* touch (file name) = create a file
+* cd (directory name) = navigates to certain directory
+* rmdir (directory name) = remove directory
+  * rm -rf (directory name) = force remove
+* mv (directory name) (new name for directory that doesn't exist yet) = rename a 
+directory
+* mv (directory name) (another directory's name) = move a directory into another 
+directory
+* c9 (file name) = open up a file
 
 ---
 ## Rolling Back Changes
  #### How to undo changes*
 
 *Scenario #1: Made changes in a file but didn't add or commit the change yet*  
-Use <code> git checkout "file name" </code> to undo the changes
+Use <code> git checkout (file name) </code> to undo the changes
 > Notes Do <code> git status </code> and it will tell you what to do.
 
 *Scenario #2: Added the changed file by accident*  
@@ -122,6 +142,6 @@ Lastly, use <code> git status </code> and follow the steps to undo the mistake
 *Scenario #4: Pushed the changed file by accident*    
 First, go to your history in github    
 Then, click on the file you want to revert and copy the commit hash    
-Next, go back to the ide and do <code> git revert "commit hash" </code>    
+Next, go back to the ide and do <code> git revert (commit hash) </code>    
 Do **"Ctrl x"**, and if further instructions pop up, do **"Y"** > **"Enter"**    
 Lastly, push the changes back to github
